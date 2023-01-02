@@ -9,9 +9,8 @@ import { delete_afk_parties } from './Controllers/party.js';
 
 const app = express();
 
-const port = process.env.Port || 3030;//9001
-const database = 'SIM3'
-mongoose.connect(`mongodb://localhost:27017/${database}`)
+const port = process.env.Port || 9001;//3030//9001
+mongoose.connect(`mongodb+srv://rayen:rayen@sim3.4jyyzlj.mongodb.net/?retryWrites=true&w=majority`)
 .then(() => console.log("Connected"))
 .catch((error) => console.log(error));
 
